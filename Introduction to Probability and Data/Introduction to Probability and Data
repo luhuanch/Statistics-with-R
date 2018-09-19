@@ -1,0 +1,109 @@
+Introduction to Data:
+	1. Observation, variables and data matrics
+
+	2. Type of variables
+		-numerical(quatitative)
+			-continuous
+			-discrete
+		categorical(qualitative)
+			ordnial(满意，稍微满意，不满意)
+			regular categorical
+	3. relationship between variables
+		- Two variables that show some connection with one another are called associated(dependent)
+		- Association can be further described as positive or negative
+		- if two variavle are not associated, they are said to be independent
+
+Sampling and Sources of bias:
+	Convenience sample: individuals who are easily accessible are more likely to be included in the sample.
+	Non-response: if only a (non-random) fraction of the randomly sampled people respond to a survey such that the sample is no longer respresentative of the population.
+	Voluntary reponse: Occurs when the sample consists of people who volunteer yo respond because they have strong opinion on the issue.
+
+Sampling methods:
+	simple random sample(SRS): each casee is equally likely to be selected
+	cluster sample: divide the population clusters, randomly sample a few clusters, then sample all observations within these clusters. 
+	stratified sample: divide the population into homogenous strata, then randomly sample from within each stractum.
+	multistage sample: divide the population clusters, randomly sample a few clusters, then randomly sample within these clusters. 
+
+Principles of experimental design:
+	1. control: compare treatment of interest to a control group.
+	2. randomize: randomly assign subjects to treatments.
+	3. replicate: collect a sufficiently large sample, or replicate the entire study.
+	4. block: block for variavles known or suspected to affect the outcome. 
+
+
+一、Exploring Numerical Data:
+		Scatterplots:
+			-visualizing the relationship between two numerical variables
+		Histogram: 
+			-provides a view of the data density 
+			-especially useful for describing the shape of the data
+		Dotplot:
+			-useful when individual values are of interest
+			-can get busy as the sample size increases
+		Box plot:
+			-useful for highlighting outliers, median, IQR
+	Evaluating the relationship:
+		-direction (positive/negative)
+		-shape (linear/curved)
+		-strength (strong/weak)
+		-outliers
+	Skewness:
+		-left skewed (longer tail is on the left)
+		-symmetric
+		-right skewed (longer tail is on the right)
+	Modality:
+		-unimodal
+		-bimodal
+		-uniform
+		-multimodal
+
+
+Measures of center:
+	median: midpoint of the distribution (50 percentile)
+	mean: arithmetic average
+	mode: most frequent observation
+
+
+Measures of spread:
+	- range: (max-min)
+	- variance: roughly the average squared deviation from the mean
+		1. why square the differences: 
+			-get rid of the negatives so that nagatives and positives do not cancel each other when added together.
+			-increase larger deviations more than smaller ones so that they are weighed more heavily
+	- standard deviation(square root of variance): roughly the average deviation around the mean, and has the same units as the data.
+	- inter quartile range: IQR = Q3 - Q1
+
+
+Robust Statistics:
+	We defined robust statistics as measures on which extreme observations have little effect.
+		robust(median/IQR) used for skewed with extreme observations
+		non-robust(mean/SD) used for symmetric distributions
+
+
+Tranforming data:
+	- a transformation is a rescaling of the data using a function
+	- when data are very strongly skewed, we sometimes transform them so they are easier to model.
+
+	Method:
+		(natural) log transformation: 
+			-often applied when much of the data cluster near zero(relative to the larger values in the data set) and all observations are positive.
+			-to make the relationship between the variables more linear, and hence easier to model with simple methods.
+		square root: 
+		inverse:
+
+	Goals of transformations:
+		- to see the data structure differetly
+		- to reduce skew assist in modeling 
+		- to straighten a nonlinear relationship in scatterplot
+
+
+二、 Exploring Categorical Data 
+	Frequency table & bar plot:
+		-Difference than histograms:
+			1. barplots for categorical variables, histograms for numerical variables
+			2. x-axis on histogram is a number line, and the ordering of the bars are not interchangeable
+	Segmented bar plot:
+		- Useful for visualizing conditional frequency distribution
+		- compare relative frequencies to explore the relationship between the variables
+
+
