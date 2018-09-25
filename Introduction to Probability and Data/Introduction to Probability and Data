@@ -1,4 +1,4 @@
-Introduction to Data:
+(Week I)Introduction to Data:
 	1. Observation, variables and data matrics
 
 	2. Type of variables
@@ -31,6 +31,7 @@ Principles of experimental design:
 	4. block: block for variavles known or suspected to affect the outcome. 
 
 
+(Week II)
 一、Exploring Numerical Data:
 		Scatterplots:
 			-visualizing the relationship between two numerical variables
@@ -105,5 +106,41 @@ Tranforming data:
 	Segmented bar plot:
 		- Useful for visualizing conditional frequency distribution
 		- compare relative frequencies to explore the relationship between the variables
+
+
+(Week III) 
+一、 Define Probability:
+Disjoint Events:	
+	Disjoint(mutually exclusive) events cannot happen at the same time. P(A and B) = 0
+		- For disjoint events A and B, P(A or B) = P(A) + P(B)
+	Non-disjoint events can happen at the same time. P(A and B) 不等于 0
+		- For Non-disjoint events A and B, P(A or B) = P(A) + P(B) - P(A and B)
+
+
+	A probability distribution lists all possible outcomes in the sample space, and the probabilities with which they occur.
+
+Independence:
+	Two processes are independet if knowing the outcome of one provides no useful information about the outcome of the other.
+
+	determining dependence based on sample data:
+		observe difference between conditional probabilities -> dependence -> hypothesis test
+
+
+二、 Conditional Probability:
+Conditional Probability: P(A|B) = P(A and B)/P(B)
+	if P(A|B) = P(A) then the events A and B are said to be independent.
+			Conceptually: giving B does not tell us anything about A.
+			Mathematically: if events A and B are independent, P(A and B) = P(A) * P(B)
+
+
+Probability Trees:
+
+
+Bayesian inference:
+	posterior: The probability we just calculated is also called the posterior probability. 
+	
+
+
+
 
 
