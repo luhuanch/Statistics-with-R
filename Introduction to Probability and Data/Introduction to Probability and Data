@@ -138,9 +138,54 @@ Probability Trees:
 
 Bayesian inference:
 	posterior: The probability we just calculated is also called the posterior probability. 
-	
 
 
 
 
+(Week IV)
+Normal distribution:
+	1.Unimodal and symmetric	
+		- bell curve 
+	2.Follows very strict guildlines about how variably the data are distributed around the mean.
+	3.Many variables are nearly normal, but none are exactly normal
 
+68 - 95 - 99.7% rule 
+
+Standardizing with Z scores:
+	-standardized (Z) score of an observation is the number of standard deviations it falls above or below the mean. 
+		Z = (observation - mean)/Standard Deviation
+	-Z score of mean  = 0
+	-unusual observation: |Z| > 2
+	-defined for distribution of any shape
+
+percentile:
+	1. When the distribution is normal, Z scores can be used to calculate percentiles
+	2. Percentile is the percentage of observations that fall below a given data point
+	3. Graphically, percentile is the area below the probablity distribution curve to the left of that observation
+	R Code:
+		> pnorm(-1, mean = 0, sd = 1)    -------pnorm for probablity
+		> qnorm(0.90, mean = 1500, sd = 300)    --------qnorm for quantiles
+
+------------------------------
+Binomial Distribution:
+	The binomial distribution describes the probability of having exactly k successes in n independent Bernouilli trials with probability of success p.
+		number of scenarios * p(single scenario) = (n!/(k!(n-k)!)*(p^k)(1-p)^(n-k)
+
+		R Code for choosing 2 success out of 9:
+			choose(9,2)
+	Bernouilli Random Variables: 
+		when an individual trial has only two possible outcomes called Bernouilli Random Variables
+
+
+	Binomial Conditions:
+		1. the trials must be independent
+		2. the number of trials, n, must be fixed
+		3. each trial outcome must be classified as a success or a failure
+		4. the probability of success, p, must be the same for eacg trial
+
+	R code:
+		dbinom(8, size = 10, p = 0.13) 10个里面选8个成功的，单个成功概率是0.13
+
+	********
+	Expected Value(mean) of binomial distribution = np
+	Standard Deviation of binomial distribution = sqrt(np(1-p))
